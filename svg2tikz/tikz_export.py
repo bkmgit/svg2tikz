@@ -287,7 +287,7 @@ def calc_arc(cp: Vector2d, r_i: Vector2d, ang, fa, fs, pos: Vector2d):
     pos: final control point
 
     The calc_arc function is based on the calc_arc function in the
-    paths_svg2obj.py script bundled with Blender 3D test
+    paths_svg2obj.py script bundled with Blender 3D test test
     Copyright (c) jm soler juillet/novembre 2004-april 2007,
     Resource: https://developer.mozilla.org/fr/docs/Web/SVG/Tutorial/Paths#elliptical_arc (in french)
     """
