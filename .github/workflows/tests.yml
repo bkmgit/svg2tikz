@@ -30,7 +30,7 @@ jobs:
           
       - name: Install dependencies
         if: steps.changed-python.outputs.any_changed == 'true'
-        run: sudo apt-get install libcairo2-dev libjpeg-dev libgirepository-1.0-dev libgirepository-2.0-dev
+        run: sudo apt-get install libcairo2-dev libjpeg-dev libgirepository-1.0-dev libgirepository-2.0-dev libxml2-dev libxslt1-dev
 
       - run: pip install --upgrade pip
         if: steps.changed-python.outputs.any_changed == 'true'
