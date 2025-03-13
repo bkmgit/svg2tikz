@@ -36,6 +36,9 @@ jobs:
 
       - run: pip install poetry
         if: steps.changed-python.outputs.any_changed == 'true'
+        
+      - run: poetry lock
+        if: steps.changed-python.outputs.any_changed == 'true'
 
       - run: poetry install --with dev
         if: steps.changed-python.outputs.any_changed == 'true'
