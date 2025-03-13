@@ -9,7 +9,7 @@ extension recreates the SVG drawing using TikZ/PGF commands, a high quality TeX
 macro package for creating graphics programmatically.
 
 The script is tailored to Inkscape SVG, but can also be used to convert arbitrary
-SVG files from the command line. Test Change!
+SVG files from the command line.
 
 Author: Kjell Magne Fauske, Devillez Louis
 """
