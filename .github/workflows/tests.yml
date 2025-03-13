@@ -29,7 +29,7 @@ jobs:
           
       - name: Install dependencies
         if: steps.changed-python.outputs.any_changed == 'true'
-        run: sudo apt-get install libgirepository1.0-dev
+        run: sudo apt-get install libcairo2-dev libgirepository1.0-dev
 
       - run: pip install --upgrade pip
         if: steps.changed-python.outputs.any_changed == 'true'
