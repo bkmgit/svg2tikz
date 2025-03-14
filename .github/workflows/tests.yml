@@ -39,10 +39,10 @@ jobs:
         if: steps.changed-python.outputs.any_changed == 'true'
 
       - run: rm poetry.lock
-        if: ${{ python.version != "3.9" && steps.changed-python.outputs.any_changed == 'true' }}
+        if: ${{ python-version != "3.9" && steps.changed-python.outputs.any_changed == 'true' }}
 
       - run: poetry lock
-        if: ${{ python.version != "3.9" && steps.changed-python.outputs.any_changed == 'true' }}
+        if: ${{ python-version != "3.9" && steps.changed-python.outputs.any_changed == 'true' }}
 
       - run: poetry install --with dev
         if: steps.changed-python.outputs.any_changed == 'true'
